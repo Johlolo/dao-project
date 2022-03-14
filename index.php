@@ -55,11 +55,27 @@ require_once("config.php");
 
 // echo $aluno;
 
+//////////////////////////////////////////////////////////
+
+//      Alterar um usuário
+
+// $usuario = new Usuario();
+
+// $usuario->loadById(12);
+
+// $usuario->update("professor", "senhaprofessor");
+
+// echo $usuario;
+
+//////////////////////////////////////////////////////////
+
+//      Deletar usuário
+
 $usuario = new Usuario();
 
-$usuario->loadById(12);
+$usuario->loadById(33);
 
-$usuario->update("professor", "senhaprofessor");
+$usuario->delete();
 
 echo $usuario;
 
